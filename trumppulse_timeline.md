@@ -19,11 +19,11 @@
 - [x] Verify key fields: post ID, created_at (UTC), clean text, replies_count, reblogs_count, favourites_count, media URLs
 
 ### 1.3 Market data — daily
-- [ ] Download daily OHLCV for SPY, QQQ, DIA using yfinance (2009–present)
-- [ ] Download daily VIX close using yfinance (^VIX)
-- [ ] Download S&P sector ETFs for sector-level analysis: XLU, XLB, XLK, XLI, XLF, XLE, XLP, XLY, XLC, SMH
-- [ ] Verify no gaps in trading day coverage, handle holidays and market closures
-- [ ] Save all daily data as parquet files with consistent datetime indexing
+- [x] Download daily OHLCV for SPY, QQQ, DIA using yfinance (2009–present)
+- [x] Download daily VIX close using yfinance (^VIX)
+- [x] Download S&P sector ETFs for sector-level analysis: XLU, XLB, XLK, XLI, XLF, XLE, XLP, XLY, XLC, SMH
+- [x] Verify no gaps in trading day coverage, handle holidays and market closures
+- [x] Save all daily data as parquet files with consistent datetime indexing
 
 ### 1.4 Market data — intraday
 - [ ] Determine which paid API to use (Alpha Vantage vs Polygon.io vs Twelve Data) based on budget and data quality
