@@ -3,12 +3,12 @@
 ## Phase 1: Data collection
 
 ### 1.1 Historical tweets (2009–2021)
-- [ ] Download the CompleteTrumpTweetsArchive from GitHub (CSV format, pre-office and in-office splits)
-- [ ] Download the Kaggle Trump tweets dataset as a secondary source for cross-validation
-- [ ] Pull the thetrumparchive.com JSON dump as a third source
-- [ ] Reconcile all three sources — deduplicate by tweet ID, resolve any missing/conflicting records
-- [ ] Verify final tweet count is in the ~56K range
-- [ ] Confirm key fields are present and clean: tweet ID, timestamp (UTC), full text, retweet count, favorite count, source device, isRetweet flag
+- [x] Download the CompleteTrumpTweetsArchive from GitHub (CSV format, pre-office and in-office splits)
+- [x] Download the Kaggle Trump tweets dataset as a secondary source for cross-validation
+- [x] Pull the thetrumparchive.com JSON dump as a third source
+- [x] Reconcile all three sources — deduplicate by tweet ID, resolve any missing/conflicting records
+- [x] Verify final tweet count is in the ~56K range
+- [x] Confirm key fields are present and clean: tweet ID, timestamp (UTC), full text, retweet count, favorite count, source device, isRetweet flag
 
 ### 1.2 Truth Social posts (2022–present)
 - [ ] Pull the CNN auto-updating archive from ix.cnn.io/data/truth-social/truth_archive.json
