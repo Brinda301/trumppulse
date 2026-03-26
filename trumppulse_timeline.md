@@ -11,12 +11,12 @@
 - [x] Confirm key fields are present and clean: tweet ID, timestamp (UTC), full text, retweet count, favorite count, source device, isRetweet flag
 
 ### 1.2 Truth Social posts (2022–present)
-- [ ] Pull the CNN auto-updating archive from ix.cnn.io/data/truth-social/truth_archive.json
-- [ ] Pull the same archive in CSV and parquet formats to compare schema consistency
+- [x] Pull the CNN auto-updating archive from ix.cnn.io/data/truth-social/truth_archive.json
+- [x] Pull the same archive in CSV and parquet formats to compare schema consistency
 - [ ] Clone the stiles/trump-truth-social-archive GitHub repo and review the scraper code for understanding the data pipeline
-- [ ] Strip HTML tags and decode HTML entities from the content field
+- [x] Strip HTML tags and decode HTML entities from the content field
 - [ ] Handle edge cases: image-only posts (no text), reblogs/re-truths, deleted posts
-- [ ] Verify key fields: post ID, created_at (UTC), clean text, replies_count, reblogs_count, favourites_count, media URLs
+- [x] Verify key fields: post ID, created_at (UTC), clean text, replies_count, reblogs_count, favourites_count, media URLs
 
 ### 1.3 Market data — daily
 - [ ] Download daily OHLCV for SPY, QQQ, DIA using yfinance (2009–present)

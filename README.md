@@ -5,14 +5,22 @@ Predict market impact of Donald Trump posts (Twitter era + Truth Social) by fine
 ## What’s here
 - `trumppulse_timeline.md` — end-to-end project plan and checklist.
 - `overview.ipynb` — detailed model training guide (FinBERT + features, labeling, evaluation).
+- `scripts/fetch_truth_social.py` — fetch and normalize the CNN Truth Social archive into CSV/parquet.
 
 ## Data note
 - Twitter corpus is intentionally limited to the in-office period (2017-01-20 to 2021-01-08); pre-office tweets are out of scope for this project.
+- Truth Social corpus is pulled from the CNN archive (2022-02-14 onward) and stored as `data/processed/truth_social_posts.parquet`.
 
 ## Quick start
 1) Clone: `git clone git@github.com:Brinda301/trumppulse.git`
 2) (Optional) Create a Python env: `python -m venv .venv && source .venv/bin/activate`
 3) Open `overview.ipynb` in VS Code/ Jupyter to review the full training workflow.
+
+### Run phase 1.2 Truth Social fetch
+- `pip install pandas requests`
+- `python scripts/fetch_truth_social.py`
+	- Downloads CNN Truth Social archive JSON and writes raw CSV at `data/raw/truth_social/truth_archive.csv`.
+	- Writes normalized parquet at `data/processed/truth_social_posts.parquet` with cleaned text, counts, and media flags.
 
 ## Project scope (high level)
 - Collect and clean Trump tweets (2009–2021) and Truth Social posts (2022–present).
